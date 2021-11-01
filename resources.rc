@@ -1,0 +1,2 @@
+aaaa ICON "orbit.ico"
+#include <wx/msw/wx.rc>

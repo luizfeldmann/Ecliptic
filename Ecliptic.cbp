@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Ecliptic" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="GUI/;Sun/" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Ecliptic" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Environment>
+				<Variable name="wxdir" value="C:\Libraries\wx" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="$(wxdir)/include" />
+			<Add directory="$(wxdir)/lib/gcc810_x64_dll/mswu" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="$(wxdir)/include" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-s" />
+			<Add option="-l:libwxbase31u.a" />
+			<Add option="-l:libwxmsw31u_core.a" />
+			<Add directory="$(wxdir)/lib/gcc810_x64_dll" />
+		</Linker>
+		<Unit filename="DateTimeWindow.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="DateTimeWindow.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="EclipticGUI.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="EclipticGUI.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="EclipticPlotPanels.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="MeeusSeasons.cpp">
+			<Option virtualFolder="Sun/" />
+		</Unit>
+		<Unit filename="MeeusSeasons.h">
+			<Option virtualFolder="Sun/" />
+		</Unit>
+		<Unit filename="SunPosition.cpp">
+			<Option virtualFolder="Sun/" />
+		</Unit>
+		<Unit filename="SunPosition.h">
+			<Option virtualFolder="Sun/" />
+		</Unit>
+		<Unit filename="Twilight.cpp">
+			<Option virtualFolder="Sun/" />
+		</Unit>
+		<Unit filename="Twilight.h">
+			<Option virtualFolder="Sun/" />
+		</Unit>
+		<Unit filename="main.cpp" />
+		<Unit filename="resources.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
